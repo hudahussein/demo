@@ -1,0 +1,134 @@
+.footer{
+	background-color:$lightColor;
+	width: 100%;
+    margin-top: 150px;
+    font-family: 'Bree Serif', serif;
+	overflow: hidden;
+	.gallary, .info, .contact{
+		float: left;
+        margin-top: 50px;
+	}
+	.gallary{
+        padding-bottom: 30px;
+		h3{
+			color: $greyColor;
+			text-transform: uppercase;
+            margin-bottom: 20px;
+		}
+		@media #{$maxSmall} {
+			width: 100%;
+			float: none;
+		}
+		@media #{$minSmall} {
+			width: 50%;
+		}
+		
+		
+		.img-box{
+			overflow: hidden;
+			img{
+                @media #{$maxSmall}{
+                    margin-top: 40px;
+                }
+				float: left;
+			    width: 20%;
+			}
+			.text{
+				float: left;
+				margin: 15px;
+				width: calc(100% - 160px);
+				h4{
+					color: $mainColor;
+				}
+				p{
+					color: $greyColor;
+				}
+				
+			}
+		}
+		
+	}
+	
+	
+	.info{
+       h3{
+			color: $greyColor;
+			text-transform: uppercase;
+            margin-bottom: 50px;
+		}
+		@media #{$maxSmall} {
+			width: 50%;
+			margin-top: 30px;
+		}
+		@media #{$minSmall} {
+			width: 25%;
+		}
+		
+		ul{
+			color:  $greyColor;
+			line-height: 1.5;
+			list-style-type: none;
+			padding-left: 0;
+			
+			li{
+				margin-bottom: 5px;
+				span{
+					color:$mainColor; 
+				}
+			}
+		}
+		h4{
+			color: $greyColor;
+			font-weight: bold;
+		}
+		p{
+			color: $greyColor;
+		}
+	}
+	
+	
+	
+	.contact{
+        h3{
+			color: $greyColor;
+			text-transform: uppercase;
+            margin-bottom: 50px;
+		}
+		@media #{$maxSmall} {
+			width: 50%;
+			margin-top: 30px;
+		}
+		@media #{$minSmall} {
+			width: 25%;
+		}
+		input[type="text"], input[type="email"], textarea{
+			border: 1px solid $greyColor;
+			padding: 10px;
+			margin-bottom: 5px;
+			border-radius: 10px;
+			width: 100%;
+		}
+		textarea{
+			height: 140px;	
+			}
+        input[type="submit"]{
+            background-color: $mainColor; 
+            padding: 5px 10px;
+        }
+	}
+	.copy-rights{
+		padding: 20px 0;
+		border-top: 2px solid #fff;
+		overflow: hidden;
+        background-color: $greyColor; 
+		color: #fff;
+		font-size: 1.2em;
+		.text{
+            margin: auto;
+            text-align: center;
+			width:100%;
+			text-transform: capitalize;
+		}
+		
+	}
+}

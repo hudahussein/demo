@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round');
+body{
+	padding: 0px;
+	width: 100%;
+	height: auto;
+	margin-top: 0;
+	margin-left: 0;
+}
+/*..start slider..*/
+.slider{
+    padding: 0;
+    margin: auto;
+    overflow: hidden;
+    height: 100vh;
+	blockquote{
+	  font-size: 2em;
+	  font-family: 'Bree Serif', serif;
+	  line-height: 1.2;
+      text-align: center;
+      color: $greyColor;
+      width: 80%;
+      margin: 40px auto;
+	}
+    carousel-item{
+        .w-100{
+          object-fit: cover;
+          height: 100%;
+        }
+    }
+}
+/*..end slider..*/
+
+/*..start servises..*/
+.servises{
+	width: 100%;
+    font-family: 'Bree Serif', serif;
+    @media #{$maxSmall}{
+        margin-top: 50px;
+    }
+    @media #{$medWidth}{
+        margin-top: 150px;
+    }
+ .servise-box{
+		@media #{$maxSmall} {
+			width: 100%;
+			float: none;
+            padding-bottom: 20px;
+			i{
+            display: block;
+			margin-bottom: 15px;}	
+            }
+        @media #{$medWidth}{
+            float: left;
+	        width: 31%;
+         }
+		
+	    h3{
+            color: $greyColor;
+            font-weight: bold;
+            i{
+            font-size: 1.5em;
+            position: relative;
+            top: -10;
+            padding-right: 10px;
+            }
+            }
+            p{
+            color: $greyColor;
+            }
+            a{
+            color: $mainColor;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: bold;
+            }
+            }
+	}
+
+/*..end servises..*/
+
+/*..start our products ..*/
+.our-products{
+	width: 100%;
+    font-family: 'Bree Serif', serif;
+    @media #{$maxSmall}{
+        margin-top: 50px;
+    }
+    @media #{$medWidth}{
+        margin-top: 150px;
+    }
+ .products-box{
+	 @media #{$maxSmall} {
+		width: 100%;
+		float: none;
+        margin-bottom: 20px;
+	 }
+	 @media #{$minSmall} {
+		 float: left;
+		 width: 45%;
+		 text-align: center;
+         margin-bottom: 30px;
+	 }
+	 @media #{$medWidth} {
+	     width: 21%;
+		 text-align:left;
+	 }
+	 img{
+     max-width: 100%;
+     object-fit: cover;
+	 }
+     h2{
+        color: $mainColor;
+        font-weight: 400;
+        font-size: 1em;
+        margin-top: 10px;
+          span{
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 1em;
+            color: $greyColor;}
+        }
+     p{
+        color: $greyColor;
+        text-align: justify;
+        }
+     a{
+        color: $mainColor;
+        text-decoration: none;
+        cursor: pointer;
+        }
+     }
+   }
+
+/*..end our products..*/
+
+/*..start lorem ipsum..*/
+.lorem-ipsum{
+	width: 100%;
+    font-family: 'Bree Serif', serif;
+    @media #{$maxSmall}{
+        margin-top: 50px;
+    }
+    @media #{$medWidth}{
+        margin-top: 150px;
+    }
+	.lorem-box{
+	     
+		@media #{$maxSmall} {
+			width: 300px;
+			margin: 50px auto;
+			float: none;	
+		}
+		@media #{$minSmall} {
+			margin-top: 30px;
+			float: left;
+	        width: (90%/3);
+			&:not(:last-of-type){margin-right: 5%;}
+		}
+		
+		img{
+			max-width: 100%;
+			
+		}
+	}
+}
+/*..end lorem ipsum..*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
