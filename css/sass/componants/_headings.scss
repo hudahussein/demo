@@ -7,11 +7,19 @@
 	color: #fff;
 	margin: 40px auto;
 	border-radius: 15px;
-	width: 30%;
 	padding: 10px 17px;
 	text-transform: uppercase;
     font-family: 'Crete Round', serif;
     font-size: 1.2em;
+        @media #{$maxSmall}{
+          width: 50%;  
+        }
+        @media #{$minSmall}{
+          width: 40%;  
+        }
+        @media #{$medWidth}{
+          width: 30%;  
+        }
         &:before{
         content: '';
         width: 100%;
